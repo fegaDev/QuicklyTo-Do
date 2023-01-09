@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sofia+Sans+Condensed:wght@700;800;900&display=swap');
+/*! 
+    *!font-family: 'Dancing Script', cursive;
+    font-family: 'Sofia Sans Condensed',sans-serif; 
+*/
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContainer h1{
+    margin-top: 50px;
+}
+.homeContainer{
+    margin-top: 150px;
+}
+.homeContainer input{
+    background-color: transparent;
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+}
+.homeContainer input:focus{
+    margin-right: 15px;
+    border: 1px dashed white;
+}
+.homeContainer input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+.homeContainer button{
+    width: 120px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-radius: 8px ;
+    font-size: 18px;
+    font-family: 'Sofia Sans Condensed',sans-serif;
+    color: aliceblue;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.homeContainer button:hover{
+    background-color: rgba(100, 148, 237, 0.568);
+    color: black;
+    border: none;
+    text-transform: uppercase;
+}
+h1{
+    font-family: 'Sofia Sans Condensed',sans-serif; 
+    color: white;
+    font-size: 50px;
+}
+h3{
+    font-family: 'Sofia Sans Condensed',sans-serif; 
+    color: white;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+p{
+    font-family: 'Dancing Script', cursive; 
+    font-size: 20px;
+    color: rgba(236, 230, 230, 0.712);
+    font-weight: 700;
+   
+}
+.dashContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itemContainer{
+    width: 70%;
+    margin: 20px 0 5px 0;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow:  0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2),0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.textoContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+.textoContainer h3{
+    margin: 0;
+
+}
+.textoContainer p{
+    margin: 10px;
+}
+.itemButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+.itemButtonContainer button{
+    width: 30%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    background-color: blueviolet;
+    filter: blur(1px);
+}
+.itemButtonContainer button:hover{
+    animation: colors 2s alternate-reverse infinite;
+    filter: blur(0)
+}
+
+.taskFormContainer{
+    display: flex;
+    flex-direction: column;
+}
+.taskFormContainer .btnAgregar{
+    transition: all 0.3s ease-out; 
+}
+
+.taskFormInputContainer{
+    display: flex;
+    flex-direction: row;
+}
+.taskFormInputContainer input{
+    margin-left: 10px;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    padding: 15px;
+    outline: none;
+    color: white;
+}
+.taskFormInputContainer input:nth-child(odd)::placeholder{
+    color: white;
+}
+.taskFormInputContainer input:nth-child(even)::placeholder{
+    color: aqua
+}
+.taskFormInputContainer input:nth-child(even){
+    color: aqua;
+}
+.taskFormInputContainer button{
+    width: 120px;
+    margin-left: 10px;
+    background-color: transparent;
+    border-radius: 8px ;
+    font-size: 18px;
+    font-family: 'Sofia Sans Condensed',sans-serif;
+    color: aliceblue;
+    border: 1px dashed white;
+}
+.taskFormInputContainer button:hover{
+    background-color: rgba(100, 148, 237, 0.342);
+    color: black;
+    border: none;
+}
+.taskCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btnSalir{
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: 'Sofia Sans Condensed',sans-ser;
+    color: white;
+    letter-spacing: 0.8px;
+    width: 65px;
+}
+.btnSalir{
+    transition: all 0.3s ease-in-out;
+    border: 1px dashed white;
+    letter-spacing: 2px;
+}
+.btnSalir:hover{
+    background-color: rgba(100, 148, 237, 0.342);
+    color: black;
+    border: none;
+}
+@keyframes colors {
+    0%{
+    transform: rotate(0deg);   
+    }
+    20%{
+        transform: rotate(2deg);   
+    }
+    40%{
+        transform: rotate(-2deg);        
+    }
+    60%{
+    transform: rotate(0deg);             
+    }
+    80%{
+        transform: rotate(2deg);          
+    }
+    100%{
+        transform: rotate(-2deg);            
+    }
+}
+@media (max-width: 407px) {
+    .homeContainer button{
+        margin-top: 10px;
+    }
+}
+
+@media  (min-width: 408px) and (max-width: 800px) {
+    .dashContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    .taskFormInputContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    .taskFormInputContainer input{
+        margin-top: 10px;
+    }
+    .taskFormInputContainer button{
+        margin-top: 10px;
+        height: 50px;
+    }
+}
