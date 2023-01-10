@@ -17,5 +17,6 @@ npm install
 ## Paso 2 :
 ![](src/assets/segundoGif.gif)
 ## Paso 3 :
-
+![](src/assets/tercerGif.gif)
 ## Paso 4 : 
+![](src/assets/cuartoGif.gif)
