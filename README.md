@@ -12,3 +12,10 @@ Ingresa tu correo para guardar tus tareas y descripciones.
 ```
 npm install
 ```
+## Paso 1 : 
+![](src/assets/primerGif.gif)
+## Paso 2 :
+![](src/assets/segundoGif.gif)
+## Paso 3 :
+
+## Paso 4 : 
